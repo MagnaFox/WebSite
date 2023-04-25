@@ -1,12 +1,4 @@
-/*!
- * jQuery ClassyCountdown
- * www.class.pm
- *
- * Written by Marius Stanciu - Sergiu <marius@class.pm>
- * Licensed under the MIT license www.class.pm/LICENSE-MIT
- * Version 1.0.0
- *
- */
+
 
 (function($) {
     $.fn.ClassyCountdown = function(options, callback) {
@@ -20,10 +12,10 @@
             labels: true,
             labelsOptions: {
                 lang: {
-                    days: 'Days',
-                    hours: 'Hours',
-                    minutes: 'Minutes',
-                    seconds: 'Seconds'
+                    days: 'Días',
+                    hours: 'Horas',
+                    minutes: 'Minutos',
+                    seconds: 'Segundos'
                 },
                 style: 'font-size: 0.5em;'
             },
