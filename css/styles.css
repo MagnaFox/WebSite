@@ -5,7 +5,7 @@ body{ font-size: 16px; font-family: 'Open Sans', sans-serif; width: 100%; height
 	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-wrap: break-word; overflow-x: hidden; 
 	color: #333; }
 
-h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, inpot, button{ margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, input, button{ margin: 0; padding: 0; }
 
 h1,h2,h3,h4,h5,h6{ line-height: 1.5; font-weight: inherit; }
 
@@ -54,19 +54,20 @@ html {
           box-sizing: inherit;
 }
 
-
-
 /* ---------------------------------
 2. COMMONS FOR PAGE DESIGN
 --------------------------------- */
 
 .center-text{ text-align: center; } 
 
-.display-table{ display: table; height: 100%; width: 100%; padding: 100px 0;  }
-
-.display-table-cell{ display: table-cell; vertical-align: middle; }
-
-
+.display-table-cell
+{ 
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
 
 ::-webkit-input-placeholder { font-size: .9em; letter-spacing: 1px; }
 
@@ -76,19 +77,17 @@ html {
 
 :-moz-placeholder { font-size: .9em; letter-spacing: 1px; }
 
-
 .full-height{ height: 100%; }
 
 .position-static{ position: static; }
 
 .font-white{ color: #fff; }
 
-
 /* ---------------------------------
 3. MAIN SECTION
 --------------------------------- */
 
-.main-area-wrapper{ height: 100%; padding: 30px; }
+.main-area-wrapper{ height: 100%; padding: 5px; }
 
 .main-area{ position: relative; z-index: 1; height: 100%; padding: 0 20px; background-size: cover;
 	box-shadow: 2px 5px 30px rgba(0,0,0,.3); color: #fff; }
@@ -96,7 +95,7 @@ html {
 .main-area:after{ content:''; position: absolute; top: 0; bottom: 0;left: 0; right: 0; z-index: -1;  
 	opacity: .3; background: #000; }
 
-.main-area .desc{ margin: 20px auto; max-width: 500px; }
+.main-area .desc{ margin: 20px auto; }
 
 .main-area .notify-btn{ margin: 20px 0; padding: 13px 35px; border-radius: 50px; border: 2px solid #F84982;
 	color: #fff; background: #F84982; }
@@ -116,21 +115,3 @@ html {
 #normal-countdown .time-sec span{ position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);
 	font-size: .9em; font-weight: 600; }
 
-
-/* SOCIAL BTN */
-
-.main-area .social-btn{ position: absolute; bottom: 30px; width: 100%; left: 50%; transform: translateX(-50%); }
-
-
-.main-area .social-btn .list-heading{ display: block; margin-bottom: 15px; }
-
-.main-area .social-btn > li > a > i{ display: inline-block; height: 35px; width: 35px; line-height: 35px; border-radius: 40px;
-	font-size: 1.04em; margin: 0 5px; }
-
-.main-area .social-btn > li > a > i:hover{ background: #fff!important; }	
-	
-.main-area .social-btn > li > a > i[class*="facebook"]{ background: #2A61D6; }
-.main-area .social-btn > li > a > i[class*="twitter"]{ background: #3AA4F8; }
-.main-area .social-btn > li > a > i[class*="google"]{ background: #F43846; }
-.main-area .social-btn > li > a > i[class*="instagram"]{ background: #8F614A; }
-.main-area .social-btn > li > a > i[class*="pinterest"]{ background: #E1C013; }
